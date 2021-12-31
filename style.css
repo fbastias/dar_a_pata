@@ -27,6 +27,16 @@ body {
   min-height: 100%;
 }
 
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+/* Navbar */
+
+.navbar-sections {
+  color: white;
+}
+
 /* Full height image header */
 .bgimg-1 {
   background-position: center;
@@ -35,10 +45,7 @@ body {
   min-height: 100%;
 }
 
-.w3-bar .w3-button {
-  padding: 16px;
-}
-
+/* Contact Page Images */
 #air-map {
   content: url("./images/contacts/air-img.png");
   height: 500px;

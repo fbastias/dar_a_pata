@@ -1,3 +1,8 @@
+/*********************************
+NAVBAR FUNCTIONS
+
+*********************************/
+
 // Toggle between showing and hiding the sidebar when clicking the menu icon
 var mySidebar = document.getElementById("mySidebar");
 
@@ -15,9 +20,43 @@ function w3_close() {
   mySidebar.style.display = "none";
 }
 
+/**
+ * Set the navbar different styles depending on the page user currently is
+ */
+var top1 = $("#home").offset().top;
+var top2 = $("#about").offset().top;
+var top3 = $("#team").offset().top;
+var top4 = $("#contact").offset().top;
+
+$(document).on("scroll", function () {
+  var scrollPos = $(document).scrollTop();
+  // HOME PAGE
+  if (scrollPos >= top1 && scrollPos < top2) {
+    $("#myNavbar").css("background-color", "");
+    $(".navbar-sections").css("color", "white");
+    // ABOUT PAGE
+  } else if (scrollPos >= top2 && scrollPos < top3) {
+    $("#myNavbar").css("background-color", "white");
+    $(".navbar-sections").css("color", "black");
+    // TEAM PAGE
+  } else if (scrollPos >= top3 && scrollPos < top4) {
+    $("#myNavbar").css("background-color", "white");
+    $(".navbar-sections").css("color", "black");
+    // CONTACT PAGE
+  } else if (scrollPos >= top4) {
+    $("#myNavbar").css("background-color", "white");
+    $(".navbar-sections").css("color", "black");
+  }
+});
+
+/*********************************
+IMAGE AUTOMATIC SLIDESHOW
+
+*********************************/
+
 // Automatic Slideshow - change image every 4 seconds
 var myIndex = 0;
-carousel();
+// carousel();
 
 function carousel() {
   var i;
