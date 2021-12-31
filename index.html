@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logo.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
@@ -50,8 +51,8 @@
             <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Saiba mais</a></p>
         </div> 
         <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-            <i class="fa fa-facebook-official w3-hover-opacity" style="color:#0E76A8"></i>
-            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-facebook-official w3-hover-opacity" style="color:#4267B2"></i>
+            <i class="fa fa-instagram w3-hover-opacity" style="color: #fb3958;"></i>
         </div>
     </header>
 
@@ -89,7 +90,7 @@
         <div class="w3-row-padding" style="margin-top:64px">
             <div class="w3-col l4 m6 w3-margin-bottom">
                 <div class="w3-card">
-                    <img src="./images/team/rita1.png" alt="John" style="width:100%">
+                    <img src="./images/team/rita1.png" alt="Rita Rodrigues" style="width:100%">
                     <div class="w3-container">
                         <h3>Rita Rodrigues</h3>
                         <p class="w3-opacity">CEO & Founder</p>
@@ -99,7 +100,7 @@
             </div>
             <div class="w3-col l4 m6 w3-margin-bottom">
                 <div class="w3-card">
-                    <img src="./images/team/mafalda.png" alt="Jane" style="width:100%">
+                    <img src="./images/team/mafalda.png" alt="Mafalda Rodrigues" style="width:100%">
                     <div class="w3-container">
                         <h3>Alface</h3>
                         <p class="w3-opacity">Art Director</p>
@@ -109,7 +110,7 @@
             </div>
             <div class="w3-col l4 m6 w3-margin-bottom">
                 <div class="w3-card">
-                    <img src="./images/team/bonnie.png" alt="Mike" style="width:100%">
+                    <img src="./images/team/bonnie.png" alt="Bonnie Rodrigues" style="width:100%">
                     <div class="w3-container">
                         <h3>Bonnie</h3>
                         <p class="w3-opacity">The Dog</p>
@@ -119,6 +120,51 @@
             </div>
         </div>
     </div>
+
+    <!-- Contact Section -->
+    <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+        <h3 class="w3-center">CONTATOS</h3>
+        <p class="w3-center w3-large">Fale connosco. Envie-nos uma mensagem:</p>
+        <!-- Image of location/map -->
+        <div class="w3-row-padding" style="margin-top:48px;">
+            <div class="w3-col l4 m6 w3-margin-bottom">
+                <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Rua Vale do Rosal, Charneca de Caparica, Setúbal</p>
+                <p><i class="fa fa-clock-o fa-fw w3-xxlarge w3-margin-right"></i> Horário: 09:00-13:00 e 14:30-18:00</p>
+                <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Telemóvel: +351 123456789</p>
+                <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+            </div>
+            <div id="air-map" class="w3-col l6 m6 w3-margin-bottom">
+                <!-- <img src="./images/contacts/air-img.png" class="w3-image" style="max-width: 100%; height: auto;"> -->
+            </div>
+            <div id="door-map" class="w3-col l2 m6 w3-margin-bottom">
+                <!-- <img src="./images/contacts/door.png" class="w3-image"> -->
+            </div>
+        </div>
+        <form action="/action_page.php" target="_blank">
+            <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+            <p>
+            <button class="w3-button w3-black" type="submit">
+                <i class="fa fa-paper-plane"></i> ENVIAR MENSAGEM
+            </button>
+            </p>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Página Inicial</a>
+        <div class="w3-xlarge w3-section">
+            <i class="fa fa-facebook-official w3-hover-opacity" style="color:#4267B2"></i>
+            <i class="fa fa-instagram w3-hover-opacity" style="color: #fb3958;"></i>
+        </div>
+        <p>Site feito por 
+            <a href="https://www.w3schools.com/w3css/default.asp" title="Filipe Bastias" target="_blank" class="w3-hover-text-blue">Filipe Bastias</a>
+            <i class="fa fa-external-link" style="margin: 4px;"></i>
+        </p>
+    </footer>
 
     <!-- Automatic Slideshow Images -->
     <!-- <div class="mySlides w3-display-container w3-center">

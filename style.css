@@ -39,6 +39,16 @@ body {
   padding: 16px;
 }
 
+#air-map {
+  content: url("./images/contacts/air-img.png");
+  height: 500px;
+}
+
+#door-map {
+  content: url("./images/contacts/door.png");
+  height: 500px;
+}
+
 /* Slideshow Images */
 /* .mySlides {
   display: none;
