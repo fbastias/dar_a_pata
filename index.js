@@ -71,3 +71,19 @@ function carousel() {
   x[myIndex - 1].style.display = "block";
   setTimeout(carousel, 4000);
 }
+
+/*********************************
+ONCLICK FUNCTIONS
+
+*********************************/
+
+function onOpenInstagram() {
+  window.open("https://www.instagram.com/dar.a.pata/", "_blank");
+}
+
+function onOpenFacebook() {
+  window.open(
+    "https://www.facebook.com/search/top?q=dar%20%C3%A0%20pata",
+    "_blank"
+  );
+}
