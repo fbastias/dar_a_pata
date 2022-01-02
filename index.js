@@ -77,13 +77,40 @@ ONCLICK FUNCTIONS
 
 *********************************/
 
-function onOpenInstagram() {
-  window.open("https://www.instagram.com/dar.a.pata/", "_blank");
+/**
+ * Functions for Slideshow in Team Section
+ */
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides((slideIndex += n));
 }
 
-function onOpenFacebook() {
-  window.open(
-    "https://www.facebook.com/search/top?q=dar%20%C3%A0%20pata",
-    "_blank"
-  );
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var prevButton = document.getElementsByClassName("prev");
+  var nextButton = document.getElementsByClassName("next");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex - 1].style.display = "block";
+  // Disable next button if in image 2 and able the prev button
+  if (slideIndex === 1) {
+    prevButton[0].style.display = "none";
+    nextButton[0].style.display = "block";
+  }
+  // Disable prev button if in image 1 and able the next button
+  if (slideIndex === 2) {
+    prevButton[0].style.display = "block";
+    nextButton[0].style.display = "none";
+  }
 }
