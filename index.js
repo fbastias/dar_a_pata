@@ -83,7 +83,7 @@ ONCLICK FUNCTIONS
 var slideIndex = 1;
 showSlides(slideIndex, "ritaSlides");
 showSlides(slideIndex, "mafaldaSlides");
-// showSlidesRita(slideIndex, "bonnieSlides");
+showSlides(slideIndex, "bonnieSlides");
 
 // Next/previous controls
 function plusSlides(n, personSlides) {
@@ -102,6 +102,10 @@ function showSlides(n, personSlides) {
   if (personSlides === "mafaldaSlides") {
     prevButton = document.getElementsByClassName("mafaldaPrev");
     nextButton = document.getElementsByClassName("mafaldaNext");
+  }
+  if (personSlides === "bonnieSlides") {
+    prevButton = document.getElementsByClassName("bonniePrev");
+    nextButton = document.getElementsByClassName("bonnieNext");
   }
   if (n > slides.length) {
     slideIndex = 1;
