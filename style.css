@@ -84,13 +84,16 @@ body {
 }
 
 /* Hide the images by default */
-.mySlides {
+.ritaSlides,
+.mafaldaSlides {
   display: none;
 }
 
 /* Next & previous buttons */
-.prev,
-.next {
+.ritaPrev,
+.ritaNext,
+.mafaldaPrev,
+.mafaldaNext {
   cursor: pointer;
   position: absolute;
   top: 40%;
@@ -106,19 +109,21 @@ body {
 }
 
 /* Position the "next button" to the right */
-.next {
+.ritaNext,
+.mafaldaNext {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
+.ritaPrev:hover,
+.mafaldaPrev:hover,
+.ritaNext:hover,
+.mafaldaNext:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.active,
-.dot:hover {
+.active {
   background-color: #717171;
 }
 

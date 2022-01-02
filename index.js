@@ -81,18 +81,28 @@ ONCLICK FUNCTIONS
  * Functions for Slideshow in Team Section
  */
 var slideIndex = 1;
-showSlides(slideIndex);
+showSlides(slideIndex, "ritaSlides");
+showSlides(slideIndex, "mafaldaSlides");
+// showSlidesRita(slideIndex, "bonnieSlides");
 
 // Next/previous controls
-function plusSlides(n) {
-  showSlides((slideIndex += n));
+function plusSlides(n, personSlides) {
+  showSlides((slideIndex += n), personSlides);
 }
 
-function showSlides(n) {
+function showSlides(n, personSlides) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var prevButton = document.getElementsByClassName("prev");
-  var nextButton = document.getElementsByClassName("next");
+  var prevButton;
+  var nextButton;
+  var slides = document.getElementsByClassName(personSlides);
+  if (personSlides === "ritaSlides") {
+    prevButton = document.getElementsByClassName("ritaPrev");
+    nextButton = document.getElementsByClassName("ritaNext");
+  }
+  if (personSlides === "mafaldaSlides") {
+    prevButton = document.getElementsByClassName("mafaldaPrev");
+    nextButton = document.getElementsByClassName("mafaldaNext");
+  }
   if (n > slides.length) {
     slideIndex = 1;
   }
