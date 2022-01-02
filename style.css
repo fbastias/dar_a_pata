@@ -9,6 +9,10 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body,
 html {
   height: 100%;
@@ -43,6 +47,17 @@ body {
   background-size: cover;
   background-image: url("./images/home/temp.jpg");
   min-height: 100%;
+  animation: load-header-image 2s;
+}
+
+@keyframes load-header-image {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
 }
 
 /* Contact Page Images */
